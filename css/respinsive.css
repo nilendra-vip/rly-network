@@ -1,0 +1,147 @@
+@media (max-width:700px) {
+    
+    #main #page1{
+        height: 100vh;
+      }
+      #main #page1 video{
+        height: 100%;
+      }
+      #main #page1 #overlay #navbar{
+        border-bottom: none;
+      }
+      #main #page1 #overlay #navbar #box{
+        margin: 0 10px;
+      }
+      #main #page1 #overlay #navbar #box #left{
+        width: 60%;
+      }
+      
+      #main #page1 #overlay #navbar #box #right{
+        display: none;
+      }
+
+      #main #page1 #overlay #textPart{
+        height: 87vh;
+      }
+      #main #page1 #overlay #textPart #box{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: static;
+      }
+      #main #page1 #overlay #textPart #box .cir{
+        width: 95%;
+        height: 95%;
+      }
+      #main #page1 #overlay #textPart #box .part1{
+        display: none;
+      }
+      
+      #main #page1 #overlay #textPart #box .part2 p{
+        font-size: 4vw;
+        width: 70%;
+        text-align: center;
+        opacity: .9;
+        margin-bottom: 20px;
+      }
+      #main #page1 #overlay #textPart #box .part2 h1{
+        font-size:12vw;
+        opacity: .7;
+        line-height: 1.1;
+      }
+      #main #page1 #overlay #textPart #box .part2 div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+      #main #page1 #overlay #textPart #box .part2 div button{
+        font-size: 3vw;
+      }
+      #main #page1 #overlay #textPart #box .part2 div .btn1{
+        padding: 15px 0;
+        font-size: 3vw;
+      }
+      #main #page1 #overlay #textPart #box .part2 div .btn2{
+        padding: 10px 10px;
+        margin-left: 0;
+        font-size: 3vw;
+      }
+      #main #page1 #overlay #textPart #box .part3{
+        display: none;
+      }
+      
+    #main #page1 #overlay footer{
+        border-top: none;
+    }
+    #main #page1 #part2{
+        display: none;
+    }
+
+
+
+    .count{
+        width: 50px;
+        height: 50px;
+      }
+      .count p{
+        font-size: 3vw;
+      }
+      #main #page2{
+        height: 60vh;
+      }
+      #main #page2 #center{
+        width: 100%;
+      }
+      #main #page2 #center h1{
+        font-size: 10vw;
+      }
+
+      #main #page3{
+       display: none; 
+      }
+
+
+      #main #page4{
+        display: none;
+      }
+
+
+      #main #page5 #overlay #textarea{
+        height: 50%;
+        background-color:#262526 ;
+      } 
+      #main #page5 #overlay #textarea h1{
+        width: 100%;
+        font-size: 6vw;
+        margin-top: -60px;
+        margin-bottom: 30px;
+      }
+      #main #page5 #overlay #textarea>p{
+        font-size: 4vw;
+      }
+      #main #page5 #overlay #textarea #email{
+        width: 200px;
+        height: 40px;
+        padding-left: 15px;
+      }
+      #main #page5 #overlay #textarea button{
+        padding: 12px 20px;
+        font-size: 3vw;
+      }
+      #main #page5 #overlay #textarea #ck{
+        font-size: 3.5vw;
+      }
+      
+      
+      #main #page5 #overlay footer{
+        height: 17%;
+        background-color: #262526;
+        flex-direction: column;
+        justify-content: center;
+        gap: 15px;
+      } 
+      #main #page5 #overlay footer h6{
+        font-size: 4vw;
+      }
+
+}
