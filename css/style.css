@@ -275,7 +275,8 @@ button:hover{
   font-family: hk;
   font-size: .7vw;
   text-transform: uppercase;
-  color: rgb(133, 131, 131);
+  color: WHITE;
+  opacity: .7;
 }
 
 #main #page1 #part2{
