@@ -105,6 +105,9 @@
         display: none;
       }
 
+      #main #page5 #overlay{
+        margin-top: 55%;
+      }
 
       #main #page5 #overlay #textarea{
         height: 50%;
