@@ -24,19 +24,7 @@ body::-webkit-scrollbar{
   display: none;
 }
 
-#cursor{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    width: 40px;
-    height: 40px;
-    background-color:white;
-    border-radius: 50px;
-    border: 1px solid black;
-    mix-blend-mode: difference;
-    z-index:1;
-}
+
 
 /* Loader start */
 #loader{
