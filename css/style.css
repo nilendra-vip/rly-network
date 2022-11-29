@@ -1,0 +1,635 @@
+/*For the counter to be visible I have set postion top as 30%....if its used as a preloader set it as 50%*/
+@font-face {
+  font-family: hk;
+  src: url(./fonts/HKGuise-Regular.ttf);
+}
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden; */
+    background-color: white;
+    font-family: "Orbitron", sans-serif;
+    cursor:none;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+#cursor{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 40px;
+    background-color:white;
+    border-radius: 50px;
+    border: 1px solid black;
+    mix-blend-mode: difference;
+    z-index:1;
+}
+
+/* Loader start */
+#loader{
+  width: 100%;
+  height: 100%;
+  background-color: #1A1A1A;
+  overflow: hidden;
+  position: fixed;
+  transition: all 1.5s ease;
+  z-index: 999;
+}
+#loader .loader h1{
+  color: #fff;
+  font-size: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: transparent;
+  transition: all .2s ease;
+}
+button,input{
+  cursor: pointer;
+}
+button:hover{
+  background-color: #CEFF45;
+  transition: all .5s ease;
+}
+/* Loader end */
+/* Main body start */
+#main{
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  /* background-color: tomato; */
+}
+#main .page{
+  width: 100%;
+  height: 100vh;
+  /* background-color: springgreen; */
+  overflow: hidden;
+}
+
+
+/* Page 1 started */
+#main #page1{
+  position: relative;
+  height: 200vh;
+  background-color: #121212;
+}
+#main #page1 video{
+  width: 100%;
+  /* height: 100%; */
+}
+#main #page1 #overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  color: white; 
+}
+#main #page1 #overlay #navbar{
+  width: 100%;
+  height: 12vh;
+  /* background-color: royalblue; */
+  border-bottom: .1px solid rgb(107, 104, 104);
+  display: flex;
+  align-items: center;
+}
+#main #page1 #overlay #navbar #box{
+  width: 100%;
+  height: 6vh;
+  /* background-color: white; */
+  display: flex;
+  margin: 0 40px;
+  border: none;
+}
+#main #page1 #overlay #navbar #box #left{
+  width: 15%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+}
+#main #page1 #overlay #navbar #box #left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+#main #page1 #overlay #navbar #box #right{
+  width: 85%;
+  height: 100%;
+  /* background-color: pink; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight:600;
+}
+#main #page1 #overlay #navbar #box #right #rleft{
+  width: 35%;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+  font-size: .8vw;
+  padding-right: 25px;
+  border-right: 1px solid rgb(107, 104, 104);
+}
+#main #page1 #overlay #navbar #box #right #rleft #active{
+  color: yellow;
+  position: relative;
+}
+#main #page1 #overlay #navbar #box #right p:hover{
+  color: #CEFF45;
+  cursor: pointer;
+}
+#main #page1 #overlay #navbar #box #right #rleft  #active::before{
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color:yellow;
+  border-radius: 50%;
+  position: absolute;
+  top: 170%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 999999;
+}
+#main #page1 #overlay #navbar #box #right #rright{
+  width: 7%;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: flex-end;
+  font-size: .8vw;
+}
+
+
+#main #page1 #overlay #textPart{
+  width: 100%;
+  height: 78vh;
+  /* background-color:yellow; */
+  position: relative;
+}
+#main #page1 #overlay #textPart #box{
+  width: 130%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  left: -10%;
+}
+#main #page1 #overlay #textPart #box .cir{
+  width: 600px;
+  height: 100%;
+  /* background-color: #CEFF45; */
+  border: 1px solid rgb(133, 131, 131);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: hk;
+}
+#main #page1 #overlay #textPart #box .part1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #page1 #overlay #textPart #box .part1 .line{
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+#main #page1 #overlay #textPart #box .part2 p{
+  font-size: 1.4vw;
+  opacity: .5;
+}
+#main #page1 #overlay #textPart #box .part2 h1{
+  font-size: 3.8vw;
+  line-height: 1.1;
+}
+#main #page1 #overlay #textPart #box .part2 div{
+  margin-top: 50px;
+}
+#main #page1 #overlay #textPart #box .part2 div button{
+  text-transform: uppercase;
+  font-size: .8vw;
+  font-weight: bold;
+  cursor: pointer;
+}
+#main #page1 #overlay #textPart #box .part2 div .btn1{
+  background-color: transparent;
+  border: none;
+  color: white;
+  position: relative;
+  padding: 10px 0;
+}
+#main #page1 #overlay #textPart #box .part2 div .btn1 .line{
+  display: inline-block;
+  height: 1.35px;
+  background-color: white;
+  position: absolute;
+  bottom: 5px;
+}
+#main #page1 #overlay #textPart #box .part2 div .btn1 #l1{
+  left: 0;
+  width: 0;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  transition-delay: 0.2s;
+}
+#main #page1 #overlay #textPart #box .part2 div .btn1 #l2{
+  right: 0;
+  width: 100%;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+}
+#main #page1 #overlay #textPart #box .part2 div .btn1:hover #l1{
+  width: 100%;
+}
+#main #page1 #overlay #textPart #box .part2 div .btn1:hover #l2{
+  width: 0;
+}
+#main #page1 #overlay #textPart #box .part2 div .btn2{
+  padding: 10px 15px;
+  margin-left: 15px;
+}
+#main #page1 #overlay #textPart #box .part3{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#main #page1 #overlay #textPart #box .part3 .line{
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+
+#main #page1 #overlay footer{
+  width: 100%;
+  height: 10vh;
+  /* background-color: royalblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: .1px solid rgb(107, 104, 104);
+}
+
+#main #page1 #overlay footer p{
+  font-family: hk;
+  font-size: .7vw;
+  text-transform: uppercase;
+  color: rgb(133, 131, 131);
+}
+
+#main #page1 #part2{
+  width: 100%;
+  height:83vh;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+#main #page1 #part2 #inbox{
+  width: 80%;
+  height: 45vh;
+  background-color: yellow;
+  display: flex;
+}
+#main #page1 #part2 #inbox #left{
+  width: 40%;
+  height: 100%;
+  background-color: royalblue;
+}
+#main #page1 #part2 #inbox #left img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#main #page1 #part2 #inbox #right{
+  width: 60%;
+  height: 100%;
+  background-color: #202020;
+  display: flex;
+}
+#main #page1 #part2 #inbox #right #rleft{
+  width: 60%;
+  height: 100%;
+  /* background-color:cornflowerblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+#main #page1 #part2 #inbox #right #rleft h1{
+  font-family: hk;
+  font-size: 3.5vw;
+  line-height: 1.2;
+}
+#main #page1 #part2 #inbox #right #rleft #grn{
+  color: #CEFF45;
+}
+#main #page1 #part2 #inbox #right #rleft p{
+  font-family: hk;
+  font-size: .9vw;
+  opacity: 0.9;
+  margin-top: 40px;
+}
+#main #page1 #part2 #inbox #right #rright{
+  width: 40%;
+  height: 100%;
+  /* background-color: rgb(189, 109, 109); */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+#main #page1 #part2 #inbox #right #rright button{
+  margin-bottom: 60px;
+  padding: 10px 50px;
+  font-size: 1vw;
+  font-weight: bold;
+}
+
+
+/* Page 1 End */
+
+
+.count{
+  width: 60px;
+  height: 60px;
+  /* background-color: yellow; */
+  border-radius: 50%;
+  border: 1px solid yellow;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.count p{
+  color: yellow;
+  font-family: gilroy;
+  font-size: 1vw;
+}
+
+.count .line{
+  width: 100%;
+  height: 1px;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+
+
+/* Page 2 started */
+#main #page2{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+#main #page2 #center{
+  width: 50%;
+  height: 60%;
+  /* background-color: ; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#main #page2 #center h1{
+  font-family: hk;
+  font-size: 4.2vw;
+  line-height: 1.2;
+  color: white;
+}
+#main #page2 #center h1 span{
+  display: inline-block;
+  color: #CEFF45;
+}
+
+/* Page 2 end */
+
+/* Page 3 start */
+
+
+
+
+/* Page 3 end */
+#main #page3{
+  /* background-color: royalblue; */
+  height: 50vh;
+}
+
+#main #page3 #bottom video{
+  width: 100%;
+}
+
+
+/* Page 4 start */
+
+#main #page4{
+  /* background-color: yellow; */
+  width: 100%;
+  /* position: absolute; */
+}
+#main #page4{
+  background-color: #121212;
+  min-height: 200vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 3vw 5vw 10vw 5vw;
+  overflow: hidden;
+}
+
+#main #page4>#cent{
+  height: 200vh;
+  width: 100%;
+  position: relative;
+  flex-shrink: 0;
+}
+#cent>#canvas{
+    position: absolute;
+    height: 110%;
+    width: 50%;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,0%);
+
+}
+#cent>#canvas>canvas{
+    max-width: 120%;
+    max-height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+#main #page4>#cent>.section{
+  width: 100%;
+  height: calc(100%/5);
+  display: flex;
+  padding: 0 1vw;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  color: #898989;
+  font-family: hk;
+
+}
+#main #page4>#cent>.section>.one{
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+#main #page4>#cent>.section>.one>.num{
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: 3px solid rgba(255, 255, 255, 0.37);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-family: hk;
+  letter-spacing: 2px;
+ 
+}
+#main #page4 .one>h1{
+  font-family: hk;
+  width: 35%;
+  line-height: 1.2;
+  
+  font-size: 2vw;
+  
+}
+#main #page4 .section>h4{
+  font-family: hk;
+  width: 20%;
+  font-size: 1.3vw;
+  line-height: 1.5;
+  
+}
+
+/* Page 4 end */
+
+/* Page 5 start */
+#main #page5{
+  height: 100vh;
+  /* background-color: tomato; */
+  position: relative;
+}
+#main #page5 video{
+  width: 100%;
+}
+#main #page5 #overlay{  
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); 
+  color: white;  
+}
+#main #page5 #overlay #textarea{
+  width: 100%;
+  height: 85%;
+  /* background-color: royalblue; */
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  justify-content: center;
+  padding: 0 10%;
+} 
+#main #page5 #overlay #textarea h1{
+  width: 60%;
+  font-size: 2.5vw;
+  margin-bottom: 40px;
+}
+#main #page5 #overlay #textarea>p{
+  font-size: 1.2vw;
+  font-family: gilroy;
+}
+#main #page5 #overlay #textarea #email{
+  width: 300px;
+  height: 50px;
+  padding-left: 20px;
+}
+#main #page5 #overlay #textarea button{
+  padding: 15px 40px;
+  font-size: 1vw;
+  text-transform: uppercase;
+}
+#main #page5 #overlay #textarea #ck{
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 0.8vw;
+}
+
+
+#main #page5 #overlay footer{
+  width: 100%;
+  height: 15%;
+  /* background-color: springgreen; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 10%;
+} 
+#main #page5 #overlay footer>div{
+  width: 80%;
+  height: 1px;
+  background-color:white;
+  position: absolute;
+  top: 0;
+  left: 10%;
+}
+#main #page5 #overlay footer h6{
+  font-size: 1vw;
+  opacity: .8;
+}
+
+/* Page 5 end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Main body end */
+
