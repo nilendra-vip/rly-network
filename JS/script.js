@@ -11,8 +11,8 @@ function loader(){
       count++;
       if(counter == 101){
         clearInterval(i);
-        document.querySelector("#loader").style.height=0;
-        document.querySelector("#loader h1").style.opacity=0;
+        $("#loader").style.height=0;
+        $("#loader h1").style.opacity=0;
       }
       
     },30);
